@@ -4,8 +4,8 @@ var selectedFile;
 
 
 $( document ).ready(function() {
-	$("#welcome").hide();
-	$(".upload-group").hide();
+	//$("#welcome").hide();
+	//$(".upload-group").hide();
 	document.getElementById("upload").addEventListener('change', handleFileSelect, false);
 });
 
@@ -57,7 +57,7 @@ function confirmUpload() {
 		contentType: 'image',
 		customMetadata: {
 			'dogType': 'Lab',
-			'uploadedBy': user.uid,
+			//'uploadedBy': user.uid,
 			'title': $("#imgTitle").val(),
 			'caption': $("#imgDesc").val()
 		},
